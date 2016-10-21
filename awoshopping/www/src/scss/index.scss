@@ -1,0 +1,368 @@
+@import "main";
+#top {
+    width: $body-base-width;
+    height: $top-height;
+    background-color: $topBackColor;
+    border-bottom: $top-border-sz $top-border-style $top-border-color;
+    .top-left {
+        width: $top-leftbox-width;
+        height: $top-height;
+        line-height: $top-height;
+        ul {
+            width: $top-leftbox-width;
+            height: $top-height;
+            line-height: $top-height;
+        }
+    }    
+    .top-right {
+        width: $top-rightbox-width;
+        height: $top-height;
+        ul {
+            width: $top-rightbox-width;
+            height: $top-height;
+        }
+    }
+}
+#top .top-left ul {
+    li {
+        height: $top-height;
+        line-height: $top-height;
+    }
+    li.li-one {
+        width: $top-left-oneW;
+    }
+    li.li-two {
+        padding-left: $top-left-twoP;
+        width: $top-left-twoW;
+    }
+    li.li-three {
+        width: $top-left-threeW;
+        padding: 0 $top-left-threeP;
+    }
+    li.li-five {
+        width: $top-left-fiveW;
+        padding-left: $top-left-fivePl;
+        padding-right: $top-left-fivePr;
+        background: url(../img/home/xiasan.png)no-repeat 88px 11px;
+        cursor: $cursor-pointer;
+        &:hover {
+            a {
+                color: $top-ahover-color;
+            }
+        }
+    }
+}
+#top .top-right ul {
+    li {
+        height: $top-height;
+        line-height: $top-height;
+    }
+    li.li-one {
+        width: $top-right-oneW;
+        padding-left: $top-right-oneP;
+        background: url("../img/home/dianhua.png") no-repeat 7px 7px;
+    }
+    li.li-two {
+        width: $top-right-twoW;
+        padding-left: $top-right-twoP;
+        background: url("../img/home/shopping.png") no-repeat 6px 4px;
+        a {
+            span {
+                color: $top-span-color;
+                font-weight: $top-span-weight;
+            }
+        }
+    }
+    li.li-three {
+        width: $top-right-threeW;
+        padding-left: $top-right-threeP;
+        background: url("../img/home/xiasan.png") no-repeat 73px 11px;
+        cursor: $cursor-pointer;
+    }
+    li.li-four {
+        width: $top-right-fourW;
+        padding-left: $top-right-fourP;
+        background: url("../img/home/xing.png") no-repeat 6px 8px;
+        cursor: $cursor-pointer;
+    }
+    li.li-five {
+        width: $top-right-fiveW;
+        padding-left: $top-right-fourP;
+        background: url("../img/home/jia.png") no-repeat 6px 9px;
+        cursor: $cursor-pointer;
+    }
+}
+#banner {
+    width: $body-base-width;
+    height: $banner-height;
+    background-color: $banner-backColor;
+    .w {
+        height: $banner-height;
+        h1 {
+            width: $banner-h1Width;
+            height: $banner-h1Height;
+            margin-top: $banner-h1MarginT;
+        }
+        .btn {
+            width: $banner-btnWidth;
+            height: $banner-btnHeight;
+            margin-left: $banner-btnMarginL;
+            margin-top: $banner-btnMarginT;
+            border: $banner-btnborderWidth $banner-btnborderSty $banner-btnborderColor;
+            border-radius: $banner-btnborderRadius;
+            background-color: $banner-btnBackColor;
+        }
+        .quality {
+            width: $banner-qualityW;
+            height: $banner-qualityH;
+            @include quality-block;
+        }
+        .search {
+            width: $banner-searchWidth;
+            height: $banner-searchHeight;
+            @include search-block;
+        }
+    }
+}
+#banner .w .btn {
+    p {
+        width: $banner-btnWidth;
+        height: $banner-btnHeight;
+        line-height: $banner-btnHeight;
+        padding-left: $banner-btnPP;
+        font-size: $font-md-base;
+        color: $banner-btnPColor;
+        background: url("../img/home/xiasan.png") no-repeat 43px 12px;
+    }
+    .popup {}
+}
+#banner .w .quality {
+    dl {
+        @include dl-float;
+        width: $banner-quality-dlW;
+        height: $banner-quality-dlH;
+        dt {
+            span {
+                @include dt-span;
+                width: $quality-dl-dtSpanW;
+                height: $quality-dl-dtSpanH;
+            }
+            span.span-left {
+                background: url("../img/home/xuebi.png") no-repeat;
+                background-position: 0 -128px;
+            }
+            span.span-mid {
+                background: url("../img/home/xuebi.png") no-repeat;
+                background-position: 0 -184px;
+            }
+            span.span-right {
+                background: url("../img/home/xuebi.png") no-repeat;
+                background-position: 0 -240px;
+            }
+        }
+        dd {
+            p {
+                width: $quality-dd-pWidth;
+                height: $quality-dd-pHeight;
+                line-height: $quality-dd-pHeight;
+                color: $quality-dd-pColor;
+            }
+        }
+    }
+    .border {
+        float: left;
+        width: $quality-borWidth;
+        height: $banner-qualityH;
+        line-height: $banner-qualityH;
+        background: url("../img/home/xuebi.png") no-repeat;
+        background-position: 0 -283px;
+    }
+}
+#banner .w .search {
+    .search-top {
+        width: $search-topWidth;
+        height: $search-topHeight;
+        .left {
+            width: $search-backLeft-width;
+            height: $search-backLeft-height;
+            background: url("../img/home/searchleft.png") no-repeat;
+        }
+        .mid {
+            width: $search-backmid-width;
+            height: $search-backLeft-height;
+            background: url("../img/home/searchmid.png") repeat-x;
+        }
+        .middle {
+            width: $search-backmiddle-width;
+            height: $search-backLeft-height;
+        }
+        .right {
+            width: $search-backright-width;
+            height: $search-backLeft-height;
+            background: url("../img/home/searchright.png") no-repeat;
+        }
+    }
+    .search-btm {
+        width: $search-topWidth;
+        height: $search-btmHeight;
+        a {
+            @include search-aStyle;
+            color: $search-aColor;
+            height: $search-btmHeight;
+            line-height: $search-btmHeight;
+            &:hover {
+                color: $top-ahover-color;
+            }
+        }
+    }
+}
+#banner .w .search .search-top {
+    .mid {
+        #txt {
+            @include txt-style;
+            width: $search-backmid-width;
+            height: $search-backLeft-height;
+            line-height: $search-backLeft-height;
+            font-size: $font-sx-base;
+        }
+    }
+    .middle {
+        #btn {
+            @include btn-style;
+            width: $search-backmiddle-width;
+            height: $search-backLeft-height;
+            line-height: $search-backLeft-height;
+            cursor: $cursor-pointer;
+        }
+    }
+}
+#nav {
+    width: $body-base-width;
+    height: $nav-height;
+    background-color: $nav-backColor;
+    .w {
+        position: relative;
+        .click {
+            li {
+                @include nav-liBlock;
+                height: $nav-height;
+                line-height: $nav-height;
+                font-size: $font-md-base;
+                a {
+                    color: $nav-li-color;
+                }
+            } 
+        }
+        .nav-show{
+            @include navShow-style;
+            .nav-show-top{
+                @include nav-showTop;
+            }
+            .nav-show-mid{
+                @include nav-showMid;
+            }
+            .nav-show-bot{
+                @include nav-showTop;
+            }
+            span{
+                @include nva-spanStyle;
+            }
+            li.border{  
+                line-height: 22px;
+            }
+            li.left{
+                @include nav-liStyle;
+                a{
+                    color: #333333;
+                }
+                
+            } 
+        }
+    } 
+}
+#content{
+    @include content-style;
+    .floor-span{
+        a{
+           @include floor-spanStyle;
+        }
+    }
+    .floor-bot{
+        @include floor-botStyle; 
+    }
+}          
+#feet{
+    @include feet-style;
+    ul{
+        @include feet-ul-style;
+        li{
+            @include feet-ul-liStyle; 
+        }
+        li.li-h3-first{
+            @include feet-li-h3;
+            @include li-h3-first; 
+        }
+        li.li-h3-second{
+            @include feet-li-h3;
+            @include li-h3-second; 
+        }
+        li.li-h3-three{
+            @include feet-li-h3;
+            @include li-h3-three; 
+        }
+        li.li-h3-four{
+            @include feet-li-h3;
+            @include li-h3-four; 
+        } 
+        
+    }
+    ul.ul-last{
+        @include ul-last;
+        li{
+            padding: 0;
+        }
+        li.li-last-first{
+            @include li-last-first;
+            span{
+                width: 65px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 11px;
+            }
+        }
+        li.li-last-second{
+            @include li-last-second;
+        }  
+        li.li-last-three{
+            @include li-last-three
+        }
+        li.li-last-four{
+            @include li-last-four;
+        }  
+    }
+}
+#floor{
+    @include floor-block;
+    .w{
+        ul{
+            margin-left: 270px;
+            .floor-click{
+                a{
+                    @include li-border-aStyle
+                }
+            }
+        } 
+    }
+}
+#bottom{
+    @include bottom-block;
+    p{
+        @include bottom-pStyle; 
+        span{
+            color:#555555;
+        }
+    }
+    i{   
+        margin-left: 268px;
+    } 
+}

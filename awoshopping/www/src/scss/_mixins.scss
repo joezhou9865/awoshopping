@@ -1,0 +1,212 @@
+@import "variables";
+@mixin quality-block {
+    margin-left: $banner-qualityL;
+    margin-top: $banner-qualityT;
+    overflow: hidden;
+}
+@mixin dl-float {
+    float: left;
+    padding-left: $banner-quality-dlP;
+    overflow: hidden;
+}
+@mixin dt-span {
+    display: block;
+    margin-left: $quality-dl-dtSpanML;
+    overflow: hidden;
+}
+@mixin search-block {
+    margin-right: $banner-searchMargRig;
+    margin-top: $banner-searchMargtop;
+    overflow: hidden;
+}
+@mixin txt-style{
+    border: none;
+    overflow: hidden;
+    
+}
+@mixin btn-style{
+    border: none;
+    background: url(../img/home/red.png) repeat-x;
+    font-size: $font-lg-base;
+    color: $search-btnColor;
+    overflow: hidden;
+}
+@mixin search-aStyle{
+    margin-right:$search-aMargin;
+    display: block;
+     overflow: hidden;
+}
+@mixin nav-liBlock{
+    padding-left: $nav-li-padding;
+    padding-right: $nav-li-padding;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    overflow: hidden;
+}
+@mixin navShow-style{
+    width: 968px;
+    height: 97px;
+    padding: 11px 15px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+@mixin nva-spanStyle{
+    float: left;
+    width: 60px;
+    height: 26px;
+    line-height: 19px;
+    color: #999999;
+    overflow: hidden;
+}
+@mixin nav-showTop{
+    width: 968px;
+    height: 26px;
+    overflow: hidden;
+}
+@mixin nav-showMid{
+    width: 968px;
+    height: 44px;
+    overflow: hidden;
+}
+@mixin nav-liStyle{
+    height: 20px;
+    color: #333333;
+    line-height: 20px;
+    padding-left: 7px;
+    padding-right: 3px;
+    overflow: hidden;
+}
+@mixin content-style{
+    padding-top: 146px;
+    background-color: #f6f6f6;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+@mixin floor-spanStyle{
+    height: 27px;
+    line-height: 27px;
+    color: #ea592d;
+    overflow: hidden;
+}
+@mixin floor-botStyle{
+    padding-top:15px;
+    overflow: hidden;
+}
+@mixin feet-style{
+    height: 130px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    background:url(../img/home/feetbg.png) repeat-x;
+    border-top: 1px solid #f7f7f7;
+    overflow: hidden;
+}
+@mixin feet-ul-style{
+    width: 184px;
+    height: 130px;
+    border-right: 1px solid #e9e1e8;
+    float: left;
+    overflow: hidden;
+}
+@mixin feet-ul-liStyle{
+    width: 117px;
+    height: 22px;
+    padding-left: 67px;
+    line-height: 22px;
+    background: url(../img/home/dian.png) no-repeat 59px 10px;
+    overflow: hidden;
+}
+@mixin feet-li-h3{
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 74px;
+    overflow: hidden;
+    
+}
+@mixin li-h3-first{
+    background: url(../img/home/xuebi.png) no-repeat;
+    background-position:  44px -333px;
+    overflow: hidden;
+}
+@mixin li-h3-second{
+    background: url(../img/home/xuebi.png) no-repeat;
+    background-position: 44px -368px;
+    overflow: hidden;
+}
+@mixin li-h3-three{
+    background: url(../img/home/xuebi.png) no-repeat;
+    background-position: 44px -402px;
+    overflow: hidden;
+}
+@mixin li-h3-four{
+    background: url(../img/home/xuebi.png) no-repeat;
+    background-position: 44px -432px;
+    overflow: hidden;
+}
+@mixin ul-last{
+    width: 173px;
+    height: 130px;
+    padding-left:32px;
+    padding-right: 46px;
+    overflow: hidden;
+}
+@mixin li-last-first{
+    height: 35px;
+    width: 157px;
+    padding-left:27px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+    background: url(../img/home/xuebi.png) no-repeat;
+    background-position: 0 -462px;
+    overflow: hidden;
+}
+@mixin li-last-second{
+    height: 35px;
+    line-height: 35px;
+    width: 157px;
+    padding-left: 15px;
+    font-size: 17px;
+    color: #999999;
+    overflow: hidden;
+}
+@mixin li-last-three{
+    width: 158px;
+    margin-left: 13px;
+    height: 26px;
+    border: 1px solid #e9e1e8;
+    overflow: hidden;
+}
+@mixin li-last-four{
+    width: 158px;
+    margin-left: 13px;
+    height: 31px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+@mixin floor-block{
+    height: 36px;
+    background: url(../img/home/botbg.png) repeat-x;
+    overflow: hidden;
+}
+@mixin li-border-aStyle{
+    padding-left: 11px;
+    padding-right: 11px;
+    overflow: hidden;
+}
+@mixin bottom-block{
+    height: 140px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+@mixin bottom-pStyle{
+    width: 1000px;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
+    overflow: hidden;
+}

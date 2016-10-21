@@ -1,0 +1,223 @@
+/*====top=======*/
+/*======banner=======*/
+/*=====nav========*/
+.l {
+  float: left;
+}
+
+.r {
+  float: right;
+}
+
+.w {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+img {
+  border-style: none;
+}
+
+.floor-top {
+  height: 38px;
+}
+
+.floor-bot {
+  margin-bottom: 40px;
+}
+
+.bgleft {
+  width: 3px;
+  height: 38px;
+  float: left;
+  background: url(../img/home/bgleft.png) no-repeat;
+}
+
+.bgmid {
+  width: 975px;
+  height: 29px;
+  padding-left: 8px;
+  padding-top: 9px;
+  padding-right: 11px;
+  background: url(../img/home/bgmid.png) repeat-x;
+  float: left;
+}
+
+.bgright {
+  width: 3px;
+  height: 38px;
+  float: left;
+  background: url(../img/home/bgright.png) no-repeat;
+}
+
+.hbgleft {
+  width: 1px;
+  height: 27px;
+  background: url(../img/home/hbgleft.png) no-repeat;
+}
+
+.hbgmid {
+  width: 137px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  font-size: 18px;
+  background: url(../img/home/hbgmid.png);
+  color: #FFFFFF;
+}
+
+.hbgright {
+  width: 1px;
+  height: 27px;
+  margin-right: 12px;
+  background: url(../img/home/hbgleft.png) no-repeat;
+}
+
+.floor-li {
+  height: 27px;
+  line-height: 27px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.floor-li-border {
+  height: 27px;
+  line-height: 31px;
+}
+
+.floor-li-span {
+  width: 100px;
+  height: 27px;
+  line-height: 27px;
+}
+
+.floor-dl {
+  width: 303px;
+  height: 324px;
+  border: 1px solid #CCCCCC;
+  padding-top: 9px;
+  padding-left: 15px;
+  background-color: #FFFFFF;
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.floor-dl-last {
+  width: 303px;
+  height: 324px;
+  border: 1px solid #CCCCCC;
+  padding-top: 9px;
+  padding-left: 15px;
+  background-color: #FFFFFF;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.floor-dt {
+  width: 290px;
+  height: 294px;
+}
+
+.floor-dt-h3 a {
+  width: 290px;
+  height: 55px;
+  line-height: 25px;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  overflow: hidden;
+}
+
+.floor-dt-span {
+  width: 288px;
+  height: 237px;
+  float: left;
+  border: 1px solid #fcdf8e;
+}
+
+.dt-span-a {
+  width: 288px;
+  height: 190px;
+  background: url(../img/home/qiuji.png) no-repeat;
+}
+
+.dt-span-p {
+  width: 280px;
+  height: 37px;
+  padding-top: 9px;
+  padding-left: 8px;
+  border-top: 1px solid #fcdf8e;
+  float: left;
+  background: url(../img/home/pbg.png) repeat-x;
+}
+
+.dt-span-p b {
+  float: left;
+  width: 100px;
+  height: 37px;
+  color: #ef340b;
+  font-size: 27px;
+}
+.dt-span-p b i {
+  font-style: normal;
+  font-size: 20px;
+  color: #ef340b;
+  font-weight: bold;
+}
+
+.dt-span-p a {
+  width: 68px;
+  height: 29px;
+  text-align: center;
+  line-height: 29px;
+  font-size: 19px;
+  border: 1px solid #ff7f3f;
+  border-radius: 2px;
+  background-color: #ffa472;
+  color: #fff;
+  margin-right: 12px;
+  float: right;
+}
+
+.floor-dd {
+  width: 288px;
+  height: 30px;
+}
+.floor-dd p {
+  width: 96px;
+  height: 30px;
+  line-height: 30px;
+}
+.floor-dd p i {
+  font-style: normal;
+  text-decoration: line-through;
+}
+.floor-dd p b {
+  font-weight: 600;
+  color: #d41f2b;
+}
+
+.touch {
+  width: 154px;
+  height: 24px;
+  border: 1px solid #ffffff;
+  background-color: #f7f7f7;
+}
+.touch span {
+  width: 47px;
+  height: 24px;
+  line-height: 24px;
+  float: left;
+}
+
+.floor-border {
+  height: 36px;
+  line-height: 38px;
+}
+
+.floor-click {
+  height: 36px;
+  line-height: 36px;
+}
+
+/*# sourceMappingURL=_util.css.map */

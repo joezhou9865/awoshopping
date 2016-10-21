@@ -1,0 +1,41 @@
+/*====top=======*/
+/*======banner=======*/
+/*=====nav========*/
+body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: #F7F7F7;
+}
+
+body {
+  font-family: "microsoft yahei";
+  color: #555555;
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+  float: left;
+}
+a:hover {
+  color: #f00;
+}
+
+img {
+  border: none;
+}
+
+/*# sourceMappingURL=_type.css.map */
