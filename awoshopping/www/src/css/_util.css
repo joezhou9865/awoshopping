@@ -220,4 +220,35 @@ img {
   line-height: 36px;
 }
 
+.log-left {
+  width: 445px;
+  height: 659px;
+}
+
+.log-left-top {
+  width: 445px;
+  height: 90px;
+}
+
+.log-left-bot {
+  width: 401px;
+  height: 535px;
+  border: 1px solid #f9f8fa;
+  border-radius: 2px;
+  padding: 16px 21px;
+}
+
+.sub {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #f68721;
+  margin-left: 100px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=_util.css.map */

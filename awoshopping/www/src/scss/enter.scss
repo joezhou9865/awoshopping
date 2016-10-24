@@ -1,0 +1,24 @@
+@import "main","index","login";
+.log-left-bot{
+    height: 420px;
+}
+.log-left-bot form{
+    height: 296px;
+    b{ 
+        input{
+            margin-right: 3px;
+        }
+    }
+    a{
+        height: 40px;
+        line-height: 60px;
+        margin-left: 5px;
+        color: #d41f2b;
+    }
+}
+.log-right{
+    img{
+        margin-top: 110px;
+        margin-left: 207px;
+    }
+}

@@ -210,3 +210,10 @@
     line-height: 46px;
     overflow: hidden;
 }
+
+
+@mixin login-block{
+    background-color: #f3f1f4;
+    height: 759px;
+    padding-top: 25px;
+}
