@@ -294,6 +294,87 @@ img {
   cursor: pointer;
 }
 
+.service {
+  width: 98px;
+  height: 197px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  border: 1px solid #f1b6c6;
+}
+
+.service-one {
+  width: 93px;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #F1B6C6;
+}
+.service-one span {
+  width: 28px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: 0 0;
+  float: left;
+}
+
+.service-two {
+  width: 88px;
+  height: 156px;
+  padding: 5px;
+}
+.service-two a {
+  width: 88px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  border-bottom: 1px dashed #F1B6C6;
+}
+.service-two .line {
+  width: 65px;
+  padding-left: 15px;
+  height: 21px;
+  color: #FFFFFF;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -28px 0;
+  border: none;
+  margin: 10px;
+}
+.service-two p {
+  width: 68px;
+  height: 32px;
+  padding: 10px;
+  border-top: 1px dashed #F1B6C6;
+  color: #F68721;
+  float: left;
+}
+.service-two span {
+  width: 78px;
+  height: 33px;
+  padding: 5px;
+  color: #26890f;
+  text-align: center;
+  float: left;
+  border-top: 1px dashed #F1B6C6;
+}
+
+.service-three {
+  width: 97px;
+  height: 26px;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  background-color: #ededed;
+  line-height: 26px;
+  text-align: center;
+}
+.service-three span {
+  float: left;
+  width: 23px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -108px 0;
+}
+
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
@@ -593,6 +674,87 @@ img {
   cursor: pointer;
 }
 
+.service {
+  width: 98px;
+  height: 197px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  border: 1px solid #f1b6c6;
+}
+
+.service-one {
+  width: 93px;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #F1B6C6;
+}
+.service-one span {
+  width: 28px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: 0 0;
+  float: left;
+}
+
+.service-two {
+  width: 88px;
+  height: 156px;
+  padding: 5px;
+}
+.service-two a {
+  width: 88px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  border-bottom: 1px dashed #F1B6C6;
+}
+.service-two .line {
+  width: 65px;
+  padding-left: 15px;
+  height: 21px;
+  color: #FFFFFF;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -28px 0;
+  border: none;
+  margin: 10px;
+}
+.service-two p {
+  width: 68px;
+  height: 32px;
+  padding: 10px;
+  border-top: 1px dashed #F1B6C6;
+  color: #F68721;
+  float: left;
+}
+.service-two span {
+  width: 78px;
+  height: 33px;
+  padding: 5px;
+  color: #26890f;
+  text-align: center;
+  float: left;
+  border-top: 1px dashed #F1B6C6;
+}
+
+.service-three {
+  width: 97px;
+  height: 26px;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  background-color: #ededed;
+  line-height: 26px;
+  text-align: center;
+}
+.service-three span {
+  float: left;
+  width: 23px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -108px 0;
+}
+
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
@@ -721,14 +883,49 @@ img {
   overflow: hidden;
 }
 
-#banner .w .btn p {
-  width: 55px;
+#banner .w .btn {
+  position: relative;
+}
+#banner .w .btn b {
+  width: 49px;
   height: 28px;
   line-height: 28px;
   padding-left: 8px;
   font-size: 16px;
   color: #333333;
+  font-weight: normal;
+  float: left;
   background: url("../img/home/xiasan.png") no-repeat 43px 12px;
+}
+#banner .w .btn .ads-more {
+  position: absolute;
+  left: 0;
+  top: 49px;
+  width: 460px;
+  height: 196px;
+  padding: 10px;
+  border-bottom: px solid #ccc;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  z-index: 10;
+}
+#banner .w .btn .ads-more span {
+  float: left;
+  width: 50px;
+  height: 19px;
+  line-height: 19px;
+}
+#banner .w .btn .ads-more button {
+  float: right;
+}
+#banner .w .btn .ads-more div {
+  width: 438px;
+  height: 159px;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  float: left;
+  margin-top: 6px;
 }
 
 #banner .w .quality dl {
@@ -1360,6 +1557,87 @@ img {
   cursor: pointer;
 }
 
+.service {
+  width: 98px;
+  height: 197px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  border: 1px solid #f1b6c6;
+}
+
+.service-one {
+  width: 93px;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #F1B6C6;
+}
+.service-one span {
+  width: 28px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: 0 0;
+  float: left;
+}
+
+.service-two {
+  width: 88px;
+  height: 156px;
+  padding: 5px;
+}
+.service-two a {
+  width: 88px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  border-bottom: 1px dashed #F1B6C6;
+}
+.service-two .line {
+  width: 65px;
+  padding-left: 15px;
+  height: 21px;
+  color: #FFFFFF;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -28px 0;
+  border: none;
+  margin: 10px;
+}
+.service-two p {
+  width: 68px;
+  height: 32px;
+  padding: 10px;
+  border-top: 1px dashed #F1B6C6;
+  color: #F68721;
+  float: left;
+}
+.service-two span {
+  width: 78px;
+  height: 33px;
+  padding: 5px;
+  color: #26890f;
+  text-align: center;
+  float: left;
+  border-top: 1px dashed #F1B6C6;
+}
+
+.service-three {
+  width: 97px;
+  height: 26px;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  background-color: #ededed;
+  line-height: 26px;
+  text-align: center;
+}
+.service-three span {
+  float: left;
+  width: 23px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -108px 0;
+}
+
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
@@ -1659,6 +1937,87 @@ img {
   cursor: pointer;
 }
 
+.service {
+  width: 98px;
+  height: 197px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  border: 1px solid #f1b6c6;
+}
+
+.service-one {
+  width: 93px;
+  height: 25px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-bottom: 1px solid #F1B6C6;
+}
+.service-one span {
+  width: 28px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: 0 0;
+  float: left;
+}
+
+.service-two {
+  width: 88px;
+  height: 156px;
+  padding: 5px;
+}
+.service-two a {
+  width: 88px;
+  height: 21px;
+  line-height: 21px;
+  text-align: center;
+  border-bottom: 1px dashed #F1B6C6;
+}
+.service-two .line {
+  width: 65px;
+  padding-left: 15px;
+  height: 21px;
+  color: #FFFFFF;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -28px 0;
+  border: none;
+  margin: 10px;
+}
+.service-two p {
+  width: 68px;
+  height: 32px;
+  padding: 10px;
+  border-top: 1px dashed #F1B6C6;
+  color: #F68721;
+  float: left;
+}
+.service-two span {
+  width: 78px;
+  height: 33px;
+  padding: 5px;
+  color: #26890f;
+  text-align: center;
+  float: left;
+  border-top: 1px dashed #F1B6C6;
+}
+
+.service-three {
+  width: 97px;
+  height: 26px;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  background-color: #ededed;
+  line-height: 26px;
+  text-align: center;
+}
+.service-three span {
+  float: left;
+  width: 23px;
+  height: 21px;
+  background: url(../img/home/bg45.jpg) no-repeat;
+  background-position: -108px 0;
+}
+
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
@@ -1787,14 +2146,49 @@ img {
   overflow: hidden;
 }
 
-#banner .w .btn p {
-  width: 55px;
+#banner .w .btn {
+  position: relative;
+}
+#banner .w .btn b {
+  width: 49px;
   height: 28px;
   line-height: 28px;
   padding-left: 8px;
   font-size: 16px;
   color: #333333;
+  font-weight: normal;
+  float: left;
   background: url("../img/home/xiasan.png") no-repeat 43px 12px;
+}
+#banner .w .btn .ads-more {
+  position: absolute;
+  left: 0;
+  top: 49px;
+  width: 460px;
+  height: 196px;
+  padding: 10px;
+  border-bottom: px solid #ccc;
+  border-radius: 5px;
+  background-color: #fbfbfb;
+  z-index: 10;
+}
+#banner .w .btn .ads-more span {
+  float: left;
+  width: 50px;
+  height: 19px;
+  line-height: 19px;
+}
+#banner .w .btn .ads-more button {
+  float: right;
+}
+#banner .w .btn .ads-more div {
+  width: 438px;
+  height: 159px;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  float: left;
+  margin-top: 6px;
 }
 
 #banner .w .quality dl {

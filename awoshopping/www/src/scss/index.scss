@@ -13,7 +13,7 @@
             height: $top-height;
             line-height: $top-height;
         }
-    }    
+    }
     .top-right {
         width: $top-rightbox-width;
         height: $top-height;
@@ -92,6 +92,52 @@
         cursor: $cursor-pointer;
     }
 }
+#stairs {
+    width: 100px;
+    height: 500px;
+    left: 0;
+    top: 300px; //943
+    border: 1px solid #F1B6C6;
+    position: fixed;
+    display: none;
+    li {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: #F1B6C6;
+        position: relative;
+        span {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #F1B6C6;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+    }
+    .active {
+    color: #FFFFFF;
+    display: block;
+    background-color: palevioletred;
+   
+}
+    li.hover{
+        span{
+            background-color: red;
+            color: #FFFFFF;
+            display: block;
+        }
+    }
+}
+
 #banner {
     width: $body-base-width;
     height: $banner-height;
@@ -125,16 +171,49 @@
     }
 }
 #banner .w .btn {
-    p {
-        width: $banner-btnWidth;
+    position: relative;
+    b {
+        width: 49px;
         height: $banner-btnHeight;
         line-height: $banner-btnHeight;
         padding-left: $banner-btnPP;
         font-size: $font-md-base;
         color: $banner-btnPColor;
+        font-weight: normal;
+        float: left;
         background: url("../img/home/xiasan.png") no-repeat 43px 12px;
     }
-    .popup {}
+    .ads-more {
+        position: absolute;
+        left: 0;
+        top: 49px;
+        width: 460px;
+        height: 196px;
+        padding: 10px;
+        border-bottom: px solid #ccc;
+        border-radius: 5px;
+        background-color: #fbfbfb;
+        z-index: 10;
+        display: none;
+        span {
+            float: left;
+            width: 50px;
+            height: 19px;
+            line-height: 19px;
+        }
+        button {
+            float: right;
+        }
+        div {
+            width: 438px;
+            height: 159px;
+            background-color: #FFFFFF;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            float: left;
+            margin-top: 6px;
+        }
+    }
 }
 #banner .w .quality {
     dl {
@@ -242,127 +321,167 @@
     background-color: $nav-backColor;
     .w {
         position: relative;
-        .click {
-            li {
-                @include nav-liBlock;
-                height: $nav-height;
-                line-height: $nav-height;
-                font-size: $font-md-base;
-                a {
-                    color: $nav-li-color;
-                }
-            } 
-        }
-        .nav-show{
+        .nav-show {
             @include navShow-style;
-            .nav-show-top{
+            .nav-show-top {
                 @include nav-showTop;
             }
-            .nav-show-mid{
+            .nav-show-mid {
                 @include nav-showMid;
             }
-            .nav-show-bot{
+            .nav-show-bot {
                 @include nav-showTop;
             }
-            span{
+            span {
                 @include nva-spanStyle;
             }
-            li.border{  
+            li.border {
                 line-height: 22px;
             }
-            li.left{
+            li.left {
                 @include nav-liStyle;
-                a{
+                a {
                     color: #333333;
                 }
-                
-            } 
+            }
         }
-    } 
+    }
 }
-#content{
+.click {
+    li {
+        @include nav-liBlock;
+        height: $nav-height;
+        line-height: $nav-height;
+        font-size: $font-md-base;
+        a {
+            color: $nav-li-color;
+        }
+    }
+}
+#carousel {
+    height: 563px;
+    overflow: hidden;
+    margin-top: 146px;
+    .carousel-show {
+        width: 1000px;
+        height: 563px;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+            .carousel-show img {
+                width: 100%;
+                height: 100%;
+            }
+            
+            #xd {
+                position: absolute;
+                right: 0px;
+                bottom: 0px;
+            }
+            
+            #xd span {
+                display: block;
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            
+            #xd span:hover {
+                color: #069;
+            }
+            
+            .xd1 {
+                color: #eee;
+            }
+            
+            .xd2 {
+                color: #069;
+            }
+#content {
     @include content-style;
-    .floor-span{
-        a{
-           @include floor-spanStyle;
+    .floor-span {
+        a {
+            @include floor-spanStyle;
         }
     }
-    .floor-bot{
-        @include floor-botStyle; 
+    .floor-bot {
+        @include floor-botStyle;
     }
-}          
-#feet{
+}
+#feet {
     @include feet-style;
-    ul{
+    ul {
         @include feet-ul-style;
-        li{
-            @include feet-ul-liStyle; 
+        li {
+            @include feet-ul-liStyle;
         }
-        li.li-h3-first{
+        li.li-h3-first {
             @include feet-li-h3;
-            @include li-h3-first; 
+            @include li-h3-first;
         }
-        li.li-h3-second{
+        li.li-h3-second {
             @include feet-li-h3;
-            @include li-h3-second; 
+            @include li-h3-second;
         }
-        li.li-h3-three{
+        li.li-h3-three {
             @include feet-li-h3;
-            @include li-h3-three; 
+            @include li-h3-three;
         }
-        li.li-h3-four{
+        li.li-h3-four {
             @include feet-li-h3;
-            @include li-h3-four; 
-        } 
-        
+            @include li-h3-four;
+        }
     }
-    ul.ul-last{
+    ul.ul-last {
         @include ul-last;
-        li{
+        li {
             padding: 0;
         }
-        li.li-last-first{
+        li.li-last-first {
             @include li-last-first;
-            span{
+            span {
                 width: 65px;
                 height: 35px;
                 line-height: 35px;
                 font-size: 11px;
             }
         }
-        li.li-last-second{
+        li.li-last-second {
             @include li-last-second;
-        }  
-        li.li-last-three{
+        }
+        li.li-last-three {
             @include li-last-three
         }
-        li.li-last-four{
+        li.li-last-four {
             @include li-last-four;
-        }  
+        }
     }
 }
-#floor{
+#floor {
     @include floor-block;
-    .w{
-        ul{
+    .w {
+        ul {
             margin-left: 270px;
-            .floor-click{
-                a{
+            .floor-click {
+                a {
                     @include li-border-aStyle
                 }
             }
-        } 
-    }
-}
-#bottom{
-    @include bottom-block;
-    p{
-        @include bottom-pStyle; 
-        span{
-            color:#555555;
         }
     }
-    i{    
+}
+#bottom {
+    @include bottom-block;
+    p {
+        @include bottom-pStyle;
+        span {
+            color: #555555;
+        }
+    }
+    i {
         margin-left: 268px;
-    } 
+    }
 }
