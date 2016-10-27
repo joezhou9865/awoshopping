@@ -1,0 +1,88 @@
+			#wrap_content{width:100%;background: #f6f6f6;}
+			#content{width: 1000px; margin: 0 auto;padding:30px 111px 0px; overflow: hidden;padding-bottom: 60px;position: relative;}
+			#content #content_yes{display: none;}
+			#content #content_yes #logo{ width: 1000px; height: 30px; background: url(../img/shopping/buy1.jpg);}
+			#content #content_yes .logo_info{float: left; display: block; margin: 5px 80px 0 95px; font: 13px "微软雅黑"; color: #555;}
+			#content #content_yes .content_info{width: 996px; height: 181px; margin: 0 auto;border: 1px solid #d4d4d4;margin-top: 20px;border-spacing: 0;font: 13px "微软雅黑";float: left;margin: 50px 0 0 0;}
+			#content #content_yes .content_info tr:nth-of-type(1) td{background: #faf7f8;border:1px solid #e2dee2;text-align: center;}
+			
+			#content #content_yes .content_info .tr_info td{background: #fff;border:1px solid #e2dee2;}
+			
+			#content #content_yes .content_info .shop_check{float: left; margin:25px 10px 0 10px}
+			#content #content_yes .content_info img{width: 90px; height: 50px; display: block;float: left; margin-top: 7px;}
+			#content #content_yes .content_info span{float: left;font: 13px "微软雅黑"; display: block;}
+			#content #content_yes .content_info .shop_info{width: 300px; display: block; margin: 10px 0 0 20px; height: 50px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+			#content #content_yes .content_info .shop_color{display: block;margin-left: 20px;}
+			#content #content_yes .content_info .shop_price{display: block;margin-left: 15px;}
+			#content #content_yes .content_info .num{float: left; width: 10px; height: 20px; line-height: 20px; background: #ddd;text-align: center; cursor: pointer;}
+			#content #content_yes .content_info .number{float: left; width: 50px; height: 20px; line-height: 20px; background: #ffff88;text-align: center;}
+			#content #content_yes .content_info .jian{margin-left: 20px;}
+			#content #content_yes .content_info .shop_price_all{display: block;margin-left: 15px;}
+			#content #content_yes .content_info .del{display: block;margin-left: 15px;}
+			#content #content_yes .content_info .shop_info_w{width: 500px;}
+			#content #content_yes .content_info .checkall{float: left; margin: 12px 10px 0 11px;}
+			#content #content_yes .content_info .allinfo{background: #fff;border:1px solid #e2dee2; font: 13px "微软雅黑"; line-height: 35px;}
+			#content #content_yes .content_info .allpr{background: #faf7f8;border:1px solid #e2dee2;line-height: 30px;}
+			#content #content_yes .content_info .allinfo span{float: right;line-height: 35px;}
+			#content #content_yes .content_info .allinfo span:nth-of-type(1){margin-right: 20px;}
+			#content #content_yes .content_info .allprice{float: right;margin-right: 20px;background: #faf7f8;border:1px solid #e2dee2;}
+			#content #content_yes .content_info .allprice b{color: #D11824;}
+			
+			#content #content_yes #adrs{width: 998px; height: 287px; border: 1px solid #E2DEE2;background: #fff;margin-top: 20px;float: left; margin-bottom: 20px;}
+			#content #content_yes #adrs .adrs_top{ height: 30px; width: 998px; background: #faf7f8; border-bottom: 1px solid #e2dee2;}
+			#content #content_yes #adrs .adrs_top span{font: 13px "微软雅黑"; line-height: 30px; float: left;margin-left: 20px;}
+			#content #content_yes #adrs p{font: 13px "微软雅黑";display: block;margin: 20px 0 0 20px;}
+			#content #content_yes #adrs .adrs_bottom{ width: 958px; height: 186px; background: #faf7f8; margin: 10px 0 0 20px;}
+			
+			#content #content_yes #adrs .reg_input{border: 0;padding: 0;height: 35px;}
+			#content #content_yes #adrs .reg_input p{display: block; float: left;width: 85px; height: 22px;line-height: 2px; text-align: right;padding-right: 15px;}
+			#content #content_yes #adrs .reg_input input{width: 246px; height: 20px; border: 1px solid #ccc;font: 13px "微软雅黑";padding-left: 10px;margin-top: 10px;}
+			#content #content_yes #adrs .reg_input select{margin: 10px 0 0 0; font: 13px "微软雅黑";}
+			#content #content_yes #adrs .reg_input .rad{width: 13px; height: 13px; font: 13px "微软雅黑";margin-top: 15px; margin-left: 10px;}
+			#content #content_yes #adrs .rad_s{font: 13px "微软雅黑";}
+			#content #content_yes .say{width: 996px; height: 56px;border: 1px solid #e2dee2; background: #fff; float: left; margin-top: 20px;}
+			#content #content_yes .say span{float: left; width: 220px; height: 56px; background: #faf7f8;font: 15px "微软雅黑"; text-align: center;line-height: 56px;}
+			#content #content_yes .say textarea{width: 306px; height: 40px; float: left; margin: 5px 0 0 5px; resize:none;}
+			
+			#content #content_yes .count{ width: 168px; height: 43px; background: url(../img/shopping/buy2.jpg); float:left; margin:20px 0 0 400px;cursor: pointer;}
+			#content #content_yes .fast_buy a{width: 100px;height: 30px; background: url(../img/shopping/buy3.jpg); float: left;margin: 20px 0 0 320px;cursor: pointer;}
+			
+			#content #content_bottom{ width: 88px; height: 30px;  background: url(../img/shopping/buy4.jpg); clear: both; float: left;}
+			#content hr{display: block;float: left;width: 998px; height: 0px;border: 0;border: 1px solid #e2dee2;}
+			
+			#content .body_content{width: 168px; height: 150px;float: left; margin: 9px 20px 0 0px;}
+			#content .body_content p{height: 150px; font: 11px "黑体";display: block;margin-top: 10px; border-bottom: 1px dashed #ddd; height: 16px;}
+			#content .body_content span{font: bolder 11px "微软雅黑"; color: #eb3947;float: left;display: block;margin-top: 10px;}
+			#content .body_content span:nth-of-type(2){font: 11px "黑体"; color: #eb3947;float: right; color: #5a5a5a; }
+			#content .body_content span:nth-of-type(2) b{color: #eb3947;font:bolder 12px "微软雅黑";}
+			
+			
+			#content #content_no{ width: 998px; height: 500px; border: 1px solid #FAF7F8; background: #fff; display: block;margin: 0 auto;}
+			#content #content_no p{width: 400px; height: 400px; display: block; margin: 0 auto; font: bolder 20px "微软雅黑"; text-align: center;}
+			#content #content_no .fast_buy a{width: 100px;height: 30px; background: url(../img/shopping/buy3.jpg); float: left;margin: 20px 0 0 450px;cursor: pointer;}
+			
+			
+			#content #content_right{width: 100px; height: 228px; background: white; top: 6px; right: 0; position: absolute;}
+			#content #content_right div:nth-of-type(1){width: 98px; height: 30px; border: 1px solid #f1b6c6; border-top: 2px solid #e29257;}
+			#content #content_right div:nth-of-type(1) a{font: bolder 12px "微软雅黑"; color: #e29257;line-height: 30px;cursor: pointer;}
+			#content #content_right div:nth-of-type(1) a:hover{color: red;}
+			#content #content_right div:nth-of-type(1) span{width: 27px; height: 21px; background: url(../img/background/bg45.jpg);float: left; margin: 5px 3px 0 8px;}
+			#content #content_right div:nth-of-type(2){width: 98px; height: 166px; border: 1px solid #f1b6c6; border-top: 0;}
+			#content #content_right div:nth-of-type(2) a{width: 98px; height: 20px;display: block;padding-top: 6px; text-align: center;font: 12px "微软雅黑";border-bottom: 1px dashed #e29257;}
+			#content #content_right div:nth-of-type(2) a:nth-of-type(2){width: 63px; height: 21px; display: block;border:0;margin: 9px 0 0px 9px; background: url(../img/background/bg45.jpg) -28px; padding: 0 0 0 17px; font: 13px "微软雅黑";color: white;line-height: 21px ;}
+			#content #content_right div:nth-of-type(2) a:nth-of-type(2):hover{color:orange;}
+			#content #content_right div:nth-of-type(2) p{ width: 98px; height: 17px; font: 15px "微软雅黑"; color: #ff811d;display: block; margin-top: 8px; padding-top: 9px;border-top: 1px dashed #e29257;text-align: center;}
+		    #content #content_right div:nth-of-type(2) p:hover{cursor: pointer;}
+		    #content #content_right div:nth-of-type(2) p:nth-of-type(2){ margin: 0; padding: 0 0 9px 0;border: 0;border-bottom: 1px dashed #e29257;}
+		    #content #content_right div:nth-of-type(2) span{font: bolder 12px "微软雅黑"; color:#26890f;display: block;margin: 8px 0 0 13px;}
+		    #content #content_right div:nth-of-type(2) span:nth-of-type(2){ font: 16px "微软雅黑"; margin: 0 0 0 13px;letter-spacing: 3px;}
+		    #content #content_right div:nth-of-type(2) span:hover{color: orange; cursor: pointer;}
+			#content #content_right div:nth-of-type(3){width: 96px; height: 26px; border: 2px solid #e1e1e1; border-top: 0;background: #ededed;} 
+			#content #content_right div:nth-of-type(3) a{font: bolder 14px "微软雅黑"; color: #666;line-height: 30px;cursor: pointer;}
+			#content #content_right div:nth-of-type(3) a:hover{color: red;}
+			#content #content_right div:nth-of-type(3) span{width: 23px; height: 21px; background: url(../img/background/bg45.jpg) 23px;float: left; margin: 4px 3px 0 5px;}
+			
+			
+			
+			
+			.none{display: none;}

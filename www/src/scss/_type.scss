@@ -1,0 +1,30 @@
+@import "variables";
+body,h1,h2,h3,h4,h5,h6,a,p,input,img,ul,ol,li,dl,dt,dd,html{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    background-color: #f6f6f6;
+}
+body{
+    font-family: $body-font-family;
+    color: $body-font-color;
+    font-size: $font-sm-base;
+}
+ul,ol{
+    list-style: none;
+}
+li{
+    float: left;
+}
+a{
+    text-decoration: none;
+    color: $body-font-color;
+    float:left; 
+    &:hover{
+        color: $top-ahover-color;
+    }
+}
+img{
+    border:0;
+}
