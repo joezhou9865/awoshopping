@@ -1,6 +1,7 @@
 @import "main";
 #top {
     width: $body-base-width;
+    min-width: 1000px;
     height: $top-height;
     background-color: $topBackColor;
     border-bottom: $top-border-sz $top-border-style $top-border-color;
@@ -13,7 +14,7 @@
             height: $top-height;
             line-height: $top-height;
         }
-    }
+    }  
     .top-right {
         width: $top-rightbox-width;
         height: $top-height;
@@ -34,7 +35,7 @@
     li.li-two {
         padding-left: $top-left-twoP;
         width: $top-left-twoW;
-    }
+    } 
     li.li-three {
         width: $top-left-threeW;
         padding: 0 $top-left-threeP;
@@ -96,7 +97,6 @@
     width: 100px;
     height: 500px;
     left: 0;
-    top: 300px; //943
     border: 1px solid #F1B6C6;
     position: fixed;
     display: none;
@@ -139,6 +139,8 @@
 }
 
 #banner {
+    
+    min-width: 1000px;
     width: $body-base-width;
     height: $banner-height;
     background-color: $banner-backColor;
@@ -170,6 +172,12 @@
         }
     }
 }
+#tags{
+    width: 261px; 
+    height:43px;
+    border:none;
+
+}
 #banner .w .btn {
     position: relative;
     b {
@@ -190,7 +198,7 @@
         width: 460px;
         height: 196px;
         padding: 10px;
-        border-bottom: px solid #ccc;
+        border-bottom: 1px solid #ccc;
         border-radius: 5px;
         background-color: #fbfbfb;
         z-index: 10;
@@ -201,10 +209,18 @@
             height: 19px;
             line-height: 19px;
         }
+        span.pinyin{
+            float: left;
+            width: 24px;
+            height: 55px;
+            margin-left: 8px;
+            margin-right: 11px;
+            line-height: 23px;
+        }
         button {
             float: right;
         }
-        div {
+        .ads-bot{
             width: 438px;
             height: 159px;
             background-color: #FFFFFF;
@@ -212,9 +228,64 @@
             padding: 5px 10px;
             float: left;
             margin-top: 6px;
+            ul{
+                width: 438px;
+                height: 97px;
+                li{
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin-left: 8px;
+                    margin-right: 11px;
+                }
+                li.ads-li{
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                }
+            }
+            ul.ads-pinyin{
+                width: 395px;
+                height: 24px;
+                border-bottom: 1px solid #ccc;
+                float: right;
+                li{
+                    width: 17px;
+                    height: 22px;
+                    line-height: 22px;
+                    text-align: center;
+                    margin: 0;
+                }
+                li.ads-active{
+                    width: 17px;
+                    height: 24px;
+                    background-color: #ffffff;
+                    border: 1px solid #ccc;
+                    border-bottom: none;
+                    color: #c12323;
+                    border-radius: 3px;
+                }
+            }
+            .ads-city{
+                width: 395px;
+                height: 32px;
+                float: right;
+                p{
+                    display: none;
+                  a{
+                      line-height: 32px;
+                      padding-right: 19px;
+                  }
+                }
+                p.city-active{
+                    display:block;
+                }
+            }
         }
+        
     }
 }
+
 #banner .w .quality {
     dl {
         @include dl-float;
@@ -316,6 +387,8 @@
     }
 }
 #nav {
+    
+    min-width: 1000px;
     width: $body-base-width;
     height: $nav-height;
     background-color: $nav-backColor;

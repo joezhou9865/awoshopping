@@ -4,7 +4,11 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+
+        <!--<link rel="stylesheet" href="jqueryui/style.css">-->
 		<link rel="stylesheet" type="text/css" href="src/css/index.css" />
+    	<link rel="stylesheet" href="src/css/lib/jquery-ui.min.css">
+		
 	</head>
 
 	<body>
@@ -13,14 +17,14 @@
 				<div class="top-left l">
 					<ul>
 						<li class="li-one">Hi,欢迎来到阿窝团！</li>
-						<li class="li-two">
-							<p class="l">请</p><a href="#"><span>登录</span></a>
+						<li class="li-two" id="log">
+							<p class="l">请</p><a href="src/html/enter.html"><span>登录</span></a>
 						</li>
-						<li class="li-three">
-							<a href="#">免费注册</a>
+						<li class="li-three" id="reg">
+							<a href="src/html/login.html">免费注册</a>
 						</li>
 						<li class="li-four"><img src="src/img/home/border.png" /></li>
-						<li class="li-five">
+						<li class="li-five" id="login">
 							<a href="#">快捷登录</a>
 						</li>
 					</ul>
@@ -30,7 +34,7 @@
 						<li class="li-one">400-188-1717</li>
 						<li><img src="src/img/home/border.png" /></li>
 						<li class="li-two">
-							<a href="#">购物车：<span>0</span>件商品</a>
+							<a href="src/html/buy.html">购物车：<span>0</span>件商品</a>
 						</li>
 						<li><img src="src/img/home/border.png" /></li>
 						<li class="li-three">
@@ -47,7 +51,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div>  
 		<div id="banner">
 			<div class="w">
 				<h1 class="l"><a href="index.html"><img src="src/img/home/logo.jpg"/></a></h1>
@@ -56,7 +60,7 @@
 					<div class="ads-more">
 						<span>城市列表</span>
 						<button>关闭 X</button>
-						<div>
+						<div class="ads-bot">
 							<ul>
 								<li class="ads-li"><a>热门</a></li>
 								<li><a>北京</a></li>
@@ -98,8 +102,8 @@
 								<li><a>东莞</a></li>
 								<li><a>厦门</a></li>
 							</ul>
-							<span>拼音</span>
-							<ul id="ads-pinyin">
+							<span class="pinyin">拼音</span>
+							<ul class="ads-pinyin">
 								<li class="ads-active">A</li>
 								<li>B</li>
 								<li>C</li>
@@ -123,7 +127,7 @@
 								<li>Y</li>
 								<li>Z</li>
 							</ul>
-							<div id="ads-city">
+							<div class="ads-city">
 								<p class="city-active">
 									<a>安康</a>
 									<a>澳门</a>
@@ -307,8 +311,9 @@
 						<form>
 							<div class="left l"></div>
 							<div class="mid l">
-								<input type="text" id="txt" placeholder="请输入您要查找的关键字" />
+								<input type="text" id="tags" placeholder="请输入您要查找的关键字" />
 							</div>
+
 							<div class="middle l">
 								<input type="button" id="btn" value="搜索" />
 							</div>
@@ -855,6 +860,7 @@
 								<li class="floor-li-border"><img src="src/img/home/border2.png" /></li>
 
 								<span class="floor-span r"><a href="#">全部生活娱乐&lt;&lt;</a></span>
+                                </ul>
 						</div>
 						<div class="bgright"></div>
 					</div>
@@ -1023,6 +1029,7 @@
 								<li class="floor-li-border"><img src="src/img/home/border2.png" /></li>
 
 								<span class="floor-span r"><a href="#">全部酒店旅游&lt;&lt;</a></span>
+                                </ul>
 						</div>
 						<div class="bgright"></div>
 					</div>
@@ -1191,6 +1198,7 @@
 								<li class="floor-li-border"><img src="src/img/home/border2.png" /></li>
 
 								<span class="floor-span r"><a href="#">全部酒店旅游&lt;&lt;</a></span>
+                                </ul>
 						</div>
 						<div class="bgright"></div>
 					</div>
@@ -1427,8 +1435,11 @@
 	</body>
 	
 	<script type="text/javascript" src="src/JavaScript/lib/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="src/JavaScript/lib/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="src/JavaScript/public.js" ></script>
 	<script type="text/javascript" src="src/JavaScript/indexdata.js" ></script>
 	<script type="text/javascript" src="src/JavaScript/index.js" ></script>
+    <script src="src/JavaScript/lib/jquery-ui.min.js"></script>
 	<script type="text/javascript">
 		var timer = setInterval("AutoPlay()", 1300); //全局变量，定义定时器，每隔1300毫秒执行一次AutoPlay()函数
 			var p = 1; //全局变量，存储当前播放的第几张图片
@@ -1466,5 +1477,32 @@
 			document.getElementById("carousel").onmouseout = function() {
 					timer = setInterval("AutoPlay()", 1300);
 				} //当鼠标移出轮播区域时，继续自动播放
+         var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "陈奕迅",
+      "张学友",
+      "王菲",
+      "林夕",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
 	</script>
 </html>

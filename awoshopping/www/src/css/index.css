@@ -34,7 +34,7 @@ a:hover {
 }
 
 img {
-  border: none;
+  border: 0;
 }
 
 /*====top=======*/
@@ -379,17 +379,18 @@ img {
 /*=====nav========*/
 #top {
   width: 100%;
+  min-width: 1000px;
   height: 27px;
   background-color: #f5f5f5;
   border-bottom: 1px solid #dcdcdc;
 }
 #top .top-left {
-  width: 333px;
+  width: 400px;
   height: 27px;
   line-height: 27px;
 }
 #top .top-left ul {
-  width: 333px;
+  width: 400px;
   height: 27px;
   line-height: 27px;
 }
@@ -411,7 +412,7 @@ img {
 }
 #top .top-left ul li.li-two {
   padding-left: 10px;
-  width: 36px;
+  width: 90px;
 }
 #top .top-left ul li.li-three {
   width: 48px;
@@ -469,7 +470,6 @@ img {
   width: 100px;
   height: 500px;
   left: 0;
-  top: 300px;
   border: 1px solid #F1B6C6;
   position: fixed;
   display: none;
@@ -509,6 +509,7 @@ img {
 }
 
 #banner {
+  min-width: 1000px;
   width: 100%;
   height: 126px;
   background-color: #990000;
@@ -545,6 +546,12 @@ img {
   overflow: hidden;
 }
 
+#tags {
+  width: 261px;
+  height: 43px;
+  border: none;
+}
+
 #banner .w .btn {
   position: relative;
 }
@@ -566,7 +573,7 @@ img {
   width: 460px;
   height: 196px;
   padding: 10px;
-  border-bottom: px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fbfbfb;
   z-index: 10;
@@ -578,10 +585,18 @@ img {
   height: 19px;
   line-height: 19px;
 }
+#banner .w .btn .ads-more span.pinyin {
+  float: left;
+  width: 24px;
+  height: 55px;
+  margin-left: 8px;
+  margin-right: 11px;
+  line-height: 23px;
+}
 #banner .w .btn .ads-more button {
   float: right;
 }
-#banner .w .btn .ads-more div {
+#banner .w .btn .ads-more .ads-bot {
   width: 438px;
   height: 159px;
   background-color: #FFFFFF;
@@ -589,6 +604,59 @@ img {
   padding: 5px 10px;
   float: left;
   margin-top: 6px;
+}
+#banner .w .btn .ads-more .ads-bot ul {
+  width: 438px;
+  height: 97px;
+}
+#banner .w .btn .ads-more .ads-bot ul li {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 8px;
+  margin-right: 11px;
+}
+#banner .w .btn .ads-more .ads-bot ul li.ads-li {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin {
+  width: 395px;
+  height: 24px;
+  border-bottom: 1px solid #ccc;
+  float: right;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin li {
+  width: 17px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin li.ads-active {
+  width: 17px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  color: #c12323;
+  border-radius: 3px;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city {
+  width: 395px;
+  height: 32px;
+  float: right;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p {
+  display: none;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p a {
+  line-height: 32px;
+  padding-right: 19px;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p.city-active {
+  display: block;
 }
 
 #banner .w .quality dl {
@@ -692,6 +760,7 @@ img {
 }
 
 #nav {
+  min-width: 1000px;
   width: 100%;
   height: 40px;
   background-color: #262626;

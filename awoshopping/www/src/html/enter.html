@@ -10,7 +10,7 @@
 	<body>
 		<div id="login">
 			<div class="w">
-				<div class="service">
+				<div id="service">
 					<div class="service-one"><span></span>
 						<a>在线客服</a>
 					</div>
@@ -24,7 +24,7 @@
 				</div>
 				<div class="log-left l">
 					<div class="log-left-top">
-						<h2><a href="#"></a></h2>
+						<h2><a href="../../index.html"></a></h2>
 						<p>未注册？
 							<a href="login.html">请注册</a>
 						</p>
@@ -35,7 +35,7 @@
 							<dl>
 								<dt>邮箱/手机：</dt>
 								<dd>
-									<input type="text" id="txt" placeholder="请输入用户名、邮箱或手机登录" />
+									<input type="text" id="email" placeholder="请输入用户名、邮箱或手机登录" />
 									<i></i>
 								</dd>
 
@@ -43,14 +43,14 @@
 
 							<dl>
 								<dt>密码：</dt>
-								<dd><input type="password" name="" />
+								<dd><input type="password" id="password" />
 									<i></i>
 
 								</dd>
 							</dl>
 
 							<b><input type="checkbox" />记住登录名</b>
-							<input class="sub l" type="submit" value="登录" />
+							<input id="log" class="sub l" type="button" value="登录" />
 							<a href="#">忘记密码？</a>
 						</form>
 						<div class="login-bot">
@@ -187,5 +187,8 @@
 			</div>
 		</div>
 	</body>
-
+	<script type="text/javascript" src="../JavaScript/lib/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="../JavaScript/enter.js"></script>
+	<script type="text/javascript" src="../JavaScript/lib/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../JavaScript/public.js" ></script>
 </html>

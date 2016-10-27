@@ -1,14 +1,13 @@
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
-body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd {
+body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd, html {
   padding: 0;
   margin: 0;
 }
 
 html, body {
-  height: 100%;
-  background-color: #F7F7F7;
+  background-color: #f6f6f6;
 }
 
 body {
@@ -35,7 +34,7 @@ a:hover {
 }
 
 img {
-  border: none;
+  border: 0;
 }
 
 /*====top=======*/
@@ -294,7 +293,7 @@ img {
   cursor: pointer;
 }
 
-.service {
+#service {
   width: 98px;
   height: 197px;
   position: fixed;
@@ -381,14 +380,13 @@ img {
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
-body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd {
+body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd, html {
   padding: 0;
   margin: 0;
 }
 
 html, body {
-  height: 100%;
-  background-color: #F7F7F7;
+  background-color: #f6f6f6;
 }
 
 body {
@@ -415,7 +413,7 @@ a:hover {
 }
 
 img {
-  border: none;
+  border: 0;
 }
 
 /*====top=======*/
@@ -674,7 +672,7 @@ img {
   cursor: pointer;
 }
 
-.service {
+#service {
   width: 98px;
   height: 197px;
   position: fixed;
@@ -846,6 +844,48 @@ img {
   cursor: pointer;
 }
 
+#stairs {
+  width: 100px;
+  height: 500px;
+  left: 0;
+  border: 1px solid #F1B6C6;
+  position: fixed;
+  display: none;
+}
+#stairs li {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F1B6C6;
+  position: relative;
+}
+#stairs li span {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F1B6C6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#stairs .active {
+  color: #FFFFFF;
+  display: block;
+  background-color: palevioletred;
+}
+#stairs li.hover span {
+  background-color: red;
+  color: #FFFFFF;
+  display: block;
+}
+
 #banner {
   width: 100%;
   height: 126px;
@@ -904,10 +944,11 @@ img {
   width: 460px;
   height: 196px;
   padding: 10px;
-  border-bottom: px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fbfbfb;
   z-index: 10;
+  display: none;
 }
 #banner .w .btn .ads-more span {
   float: left;
@@ -915,10 +956,18 @@ img {
   height: 19px;
   line-height: 19px;
 }
+#banner .w .btn .ads-more span.pinyin {
+  float: left;
+  width: 24px;
+  height: 55px;
+  margin-left: 8px;
+  margin-right: 11px;
+  line-height: 23px;
+}
 #banner .w .btn .ads-more button {
   float: right;
 }
-#banner .w .btn .ads-more div {
+#banner .w .btn .ads-more .ads-bot {
   width: 438px;
   height: 159px;
   background-color: #FFFFFF;
@@ -926,6 +975,59 @@ img {
   padding: 5px 10px;
   float: left;
   margin-top: 6px;
+}
+#banner .w .btn .ads-more .ads-bot ul {
+  width: 438px;
+  height: 97px;
+}
+#banner .w .btn .ads-more .ads-bot ul li {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 8px;
+  margin-right: 11px;
+}
+#banner .w .btn .ads-more .ads-bot ul li.ads-li {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin {
+  width: 395px;
+  height: 24px;
+  border-bottom: 1px solid #ccc;
+  float: right;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin li {
+  width: 17px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin li.ads-active {
+  width: 17px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  color: #c12323;
+  border-radius: 3px;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city {
+  width: 395px;
+  height: 32px;
+  float: right;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p {
+  display: none;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p a {
+  line-height: 32px;
+  padding-right: 19px;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p.city-active {
+  display: block;
 }
 
 #banner .w .quality dl {
@@ -1036,19 +1138,6 @@ img {
 #nav .w {
   position: relative;
 }
-#nav .w .click li {
-  padding-left: 15px;
-  padding-right: 15px;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  overflow: hidden;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-}
-#nav .w .click li a {
-  color: #ffffff;
-}
 #nav .w .nav-show {
   width: 968px;
   height: 97px;
@@ -1098,8 +1187,65 @@ img {
   color: #333333;
 }
 
+.click li {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.click li a {
+  color: #ffffff;
+}
+
+#carousel {
+  height: 563px;
+  overflow: hidden;
+  margin-top: 146px;
+}
+#carousel .carousel-show {
+  width: 1000px;
+  height: 563px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-show img {
+  width: 100%;
+  height: 100%;
+}
+
+#xd {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+#xd span {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#xd span:hover {
+  color: #069;
+}
+
+.xd1 {
+  color: #eee;
+}
+
+.xd2 {
+  color: #069;
+}
+
 #content {
-  padding-top: 146px;
+  margin-top: 40px;
   background-color: #f6f6f6;
   padding-bottom: 80px;
   overflow: hidden;
@@ -1264,14 +1410,13 @@ img {
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
-body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd {
+body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd, html {
   padding: 0;
   margin: 0;
 }
 
 html, body {
-  height: 100%;
-  background-color: #F7F7F7;
+  background-color: #f6f6f6;
 }
 
 body {
@@ -1298,7 +1443,7 @@ a:hover {
 }
 
 img {
-  border: none;
+  border: 0;
 }
 
 /*====top=======*/
@@ -1557,7 +1702,7 @@ img {
   cursor: pointer;
 }
 
-.service {
+#service {
   width: 98px;
   height: 197px;
   position: fixed;
@@ -1644,14 +1789,13 @@ img {
 /*====top=======*/
 /*======banner=======*/
 /*=====nav========*/
-body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd {
+body, h1, h2, h3, h4, h5, h6, a, p, input, img, ul, ol, li, dl, dt, dd, html {
   padding: 0;
   margin: 0;
 }
 
 html, body {
-  height: 100%;
-  background-color: #F7F7F7;
+  background-color: #f6f6f6;
 }
 
 body {
@@ -1678,7 +1822,7 @@ a:hover {
 }
 
 img {
-  border: none;
+  border: 0;
 }
 
 /*====top=======*/
@@ -1937,7 +2081,7 @@ img {
   cursor: pointer;
 }
 
-.service {
+#service {
   width: 98px;
   height: 197px;
   position: fixed;
@@ -2109,6 +2253,48 @@ img {
   cursor: pointer;
 }
 
+#stairs {
+  width: 100px;
+  height: 500px;
+  left: 0;
+  border: 1px solid #F1B6C6;
+  position: fixed;
+  display: none;
+}
+#stairs li {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F1B6C6;
+  position: relative;
+}
+#stairs li span {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #F1B6C6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#stairs .active {
+  color: #FFFFFF;
+  display: block;
+  background-color: palevioletred;
+}
+#stairs li.hover span {
+  background-color: red;
+  color: #FFFFFF;
+  display: block;
+}
+
 #banner {
   width: 100%;
   height: 126px;
@@ -2167,10 +2353,11 @@ img {
   width: 460px;
   height: 196px;
   padding: 10px;
-  border-bottom: px solid #ccc;
+  border-bottom: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fbfbfb;
   z-index: 10;
+  display: none;
 }
 #banner .w .btn .ads-more span {
   float: left;
@@ -2178,10 +2365,18 @@ img {
   height: 19px;
   line-height: 19px;
 }
+#banner .w .btn .ads-more span.pinyin {
+  float: left;
+  width: 24px;
+  height: 55px;
+  margin-left: 8px;
+  margin-right: 11px;
+  line-height: 23px;
+}
 #banner .w .btn .ads-more button {
   float: right;
 }
-#banner .w .btn .ads-more div {
+#banner .w .btn .ads-more .ads-bot {
   width: 438px;
   height: 159px;
   background-color: #FFFFFF;
@@ -2189,6 +2384,59 @@ img {
   padding: 5px 10px;
   float: left;
   margin-top: 6px;
+}
+#banner .w .btn .ads-more .ads-bot ul {
+  width: 438px;
+  height: 97px;
+}
+#banner .w .btn .ads-more .ads-bot ul li {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 8px;
+  margin-right: 11px;
+}
+#banner .w .btn .ads-more .ads-bot ul li.ads-li {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin {
+  width: 395px;
+  height: 24px;
+  border-bottom: 1px solid #ccc;
+  float: right;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin li {
+  width: 17px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+#banner .w .btn .ads-more .ads-bot ul.ads-pinyin li.ads-active {
+  width: 17px;
+  height: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  color: #c12323;
+  border-radius: 3px;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city {
+  width: 395px;
+  height: 32px;
+  float: right;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p {
+  display: none;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p a {
+  line-height: 32px;
+  padding-right: 19px;
+}
+#banner .w .btn .ads-more .ads-bot .ads-city p.city-active {
+  display: block;
 }
 
 #banner .w .quality dl {
@@ -2299,19 +2547,6 @@ img {
 #nav .w {
   position: relative;
 }
-#nav .w .click li {
-  padding-left: 15px;
-  padding-right: 15px;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  overflow: hidden;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-}
-#nav .w .click li a {
-  color: #ffffff;
-}
 #nav .w .nav-show {
   width: 968px;
   height: 97px;
@@ -2361,8 +2596,65 @@ img {
   color: #333333;
 }
 
+.click li {
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.click li a {
+  color: #ffffff;
+}
+
+#carousel {
+  height: 563px;
+  overflow: hidden;
+  margin-top: 146px;
+}
+#carousel .carousel-show {
+  width: 1000px;
+  height: 563px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-show img {
+  width: 100%;
+  height: 100%;
+}
+
+#xd {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+#xd span {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#xd span:hover {
+  color: #069;
+}
+
+.xd1 {
+  color: #eee;
+}
+
+.xd2 {
+  color: #069;
+}
+
 #content {
-  padding-top: 146px;
+  margin-top: 40px;
   background-color: #f6f6f6;
   padding-bottom: 80px;
   overflow: hidden;

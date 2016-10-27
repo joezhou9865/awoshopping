@@ -11,7 +11,7 @@
 	<body>
 		<div id="login">
 			<div class="w">
-				<div class="service">
+				<div id="service">
 					<div class="service-one"><span></span>
 						<a>在线客服</a>
 					</div>
@@ -25,13 +25,13 @@
 				</div>
 				<div class="log-left l">
 					<div class="log-left-top">
-						<h2><a href="#"></a></h2>
+						<h2><a href="../../index.html"></a></h2>
 						<p>已注册？
 							<a href="enter.html">登录</a>
 						</p>
 					</div>
 					<div class="log-left-bot">
-						<form action="" method="post">
+						<form action="" method="get">
 							<p><span>会员注册</span>欢迎您加入阿窝团，注册只需15秒，超值优惠每天享受</p>
 							<dl>
 								<dt>邮箱：</dt>
@@ -59,8 +59,8 @@
 									<i></i>
 								</dd>
 							</dl>
-							<b><input type="checkbox" /><span>我已阅读并接受<a href="#">《阿窝团用户协议》</a></span></b>
-							<input class="sub" type="submit" value="提交" />
+							<b><input type="checkbox" id="checkbox" /><span>我已阅读并接受<a href="#" id="checkA">《阿窝团用户协议》</a></span></b>
+							<input class="sub" type="button" id="submit" value="提交" />
 						</form>
 						<div class="login-bot">
 							<p class="">您也可以用合作网站账号登录阿窝团：</p>
@@ -199,5 +199,5 @@
 	<script type="text/javascript" src="../JavaScript/lib/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="../JavaScript/login.js"></script>
 	<script type="text/javascript" src="../JavaScript/lib/jquery.cookie.js"></script>
-
+	<script type="text/javascript" src="../JavaScript/public.js" ></script>
 </html>

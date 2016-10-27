@@ -1,4 +1,5 @@
  $(function(){
+ 	var login_flag = true;//用户是否登录
  	$(".click ul li:first").css({"background-color":"#f6f6f6"}).children().css({"color":"#555555"})
  	$(".click ul li").click(function(){
  		$(this).css({"background-color":"#f6f6f6"}).children().css({"color":"#555555"});
@@ -55,10 +56,22 @@
 				}
 			});
 			
-			
- 	$("#servive .service-three").click(function(){
- 		$("html,body").animate({
- 			scrollTop:0
- 		},20);
- 	});
+//	if ($.cookie("loginuser") && $.cookie("loginpass") && $.cookie("loginema")&&login_flag){
+//		if ($.cookie("loginuser")!="null" && $.cookie("loginpass")!="null" && $.cookie("loginema")!="null") {
+//			$("#log").html("<p class='l'></p><a href="+"src/html/enter.html"+">欢迎你<span>"+$.cookie("loginuser")+"</span></a>").find("span").css({"color":"#fe9501"});
+//			$("#reg").html("<a></a>");
+//	        $("#reg").find("a").html("退出登录").addClass("quit");
+//		}
+//  }	
+//  $(".quit").click(function() {
+//			console.log(1)
+//	        $.cookie("loginuser",null,{ path: '/' }); 
+//	        $.cookie("loginpass",null,{ path: '/' });
+//	        $.cookie("loginema",null,{ path: '/' });
+//	       	$("#log").html("<p class='l'>请</p><a href="+"src/html/enter.html"+"><span>登录<span></a>").find("a").css({"display":"inline-block"});
+//	       	$("#reg").html("<a href=" + "html/login.html" +">免费注册</a>");
+//	       	login_flag = false;
+//	    })
+		
+ 	
  })

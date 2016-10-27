@@ -1,6 +1,6 @@
 @import "main","index";
 #content{
-    padding-top: 30px;
+    padding-top: 30px; 
     .content-left{
         width: 748px;
         height: 642px;
@@ -8,12 +8,12 @@
         background-color: #FFFFFF;
         position: relative;
         .content-left-top{ 
-            width: 748px;
+            width: 748px; 
             height: 590px;
             .first-p{
                 width: 702px;
                 height: 137px;
-                line-height: 35px;
+                line-height: 35px; 
                 margin-top: 20px;
                 margin-left: 20px;
                 font-size: 23px;
@@ -457,7 +457,7 @@
 
 }
 .content-bottom{
-    height: 15538px;
+    height: 15600px;
     width: 748px;
     margin-top: 10px;
     border: 1px solid #999999;
@@ -560,6 +560,7 @@
     top: 69px;
     background-color: #FFFFFF;
     z-index: 10;
+    display: none;
 }
 .shopping-cart-in{
     width: 552px;
@@ -608,7 +609,7 @@
     padding-top: 14px;
     padding-bottom: 14px;
 }
-.shopping-cart-p1{
+#shopping-cart-p1{
     width: 510px;
     height: 75px;
     span{
@@ -627,8 +628,14 @@
         margin-right: 20px;
         border: 1px solid #dedede;
     }
+    b.red{
+    border: 1px solid #f00;
 }
-.shopping-cart-p2{
+b.black{
+    border: 1px solid #CCCCCC;
+}
+}
+#shopping-cart-p2{
      width: 510px;
     height: 75px;
     span{
@@ -644,8 +651,14 @@
         border: 1px solid #DEDEDE;
         margin-right: 20px;
     }
+    b.red{
+    border: 1px solid #f00;
 }
-.shopping-cart-p3{
+b.black{
+    border: 1px solid #CCCCCC;
+}
+}
+#shopping-cart-p3{
     width: 510px;
     height: 69px;
     span{
@@ -687,7 +700,7 @@
        }
     }
 }
-.shopping-cart-p4{
+#shopping-cart-p4{
     width: 488px;
     padding-left: 10px;
     height: 26px;
@@ -698,7 +711,8 @@
     color: #d41f2b;
     padding:6px;
 }
-.shopping-cart-p5{
+
+#shopping-cart-p5{
     width: 125px;
     height: 33px;
     margin-top: 10px;
@@ -706,14 +720,17 @@
     background-position: -234px -245px;
     cursor: pointer;
 }
-.shopping-cart-p6{
+#shopping-cart-p6{
     width: 450px;
     height: 50px;
     padding-left: 60px;
     background: url(../img/details/shop_det_bg.png) no-repeat;
     background-position: -281px -195px;
     margin-top: 38px;
+    display: none;
 }
+
+
 .left-span{
     width: 168px;
     height: 50px;
